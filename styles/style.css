@@ -1,16 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:wght@400;700;900&family=Mulish:wght@400;800&family=Open+Sans:wght@400;700;800&display=swap');
 
 /* Shared Style */
-*{
-     font-family: 'Mulish', sans-serif; 
+* {
+     font-family: 'Mulish', sans-serif;
 }
 
+.description {
+     color: #FFF;
+     font-style: 15px;
+     font-weight: 400;
+     line-height: 26px;
+}
+
+.tour-description {
+     color: rgba(19, 19, 24, 0.70);
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     margin-bottom: 1.68rem;
+
+
+}
+
+.tour-list {
+     color: rgba(19, 19, 24, 0.70);
+
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 26px;
+     padding-left: 1.5rem;
+     margin-bottom: 1.6rem;
+
+}
+
+.btn-primary {
+     border-radius: 8px;
+     border: 0;
+     color: #FFF;
+     font-size: 1.25rem;
+     background: #FF900E;
+     padding: 20px 25px;
+     cursor: pointer;
+     font-size: 20px;
+
+}
+
+
+/* nav section */
 
 nav {
      display: flex;
      justify-content: space-between;
+
      align-items: center;
      margin: 50px 140px;
+}
+
+nav>h2 {
+     color: coral;
 }
 
 
@@ -33,7 +80,7 @@ nav li a {
 }
 
 
-
+/* banner section */
 .banner {
 
      background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/banner.png);
@@ -49,26 +96,215 @@ nav li a {
 
 
 }
-.banner-content{
+
+.banner-content {
      text-align: center;
-     
- }
+
+}
 
 .banner-title {
      color: #FFF;
      font-size: 64px;
      font-weight: 800;
+
+}
+
+
+.banner-input {
+     display: flex;
+     background: #c51414;
+     margin: 0 106px 185px;
+     position: relative;
+}
+
+/* tour section */
+
+.tour-container {
+     margin:  140px;
+     margin-top: 6.25rem;
+     display: flex;
+     gap: 53px;
+}
+
+.tour-title {
+     color: #131318;
+     font-size: 40px;
+     font-weight: 800;
+     margin-bottom: 1.6rem;
+}
+
+/* Destination section  */
+.destination-container {
+     justify-content: center;
+     align-items: center;
+     margin: 0 140px ;
+     /* max-width: 71.88rem;
+  margin: 140px;
+  margin-top: 6.25rem; */
+}
+
+.destination-content {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 3rem;
+     align-items: center;
+}
+
+.destination-title {
+     color: #131318;
+     text-align: center;
+     font-size: 40px;
+     font-weight: 800;
+     margin-bottom: 1.6rem;
+}
+.ds-image{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.ds-image-content{
+     color: #fff;
+     text-align: center;
+     font-size: 28px;
+     font-weight: 800;
     
 }
 
-.banner-description{
-color: #FFF;
-font-style: 15px;
-font-weight: 400;
-line-height: 26px;
-}
-.banner-input{
+.img-one {
+     border-radius: 16px;
+     width: 35.82rem;
+     height: 18.75rem;
+     border-radius: 1rem;
+     background: linear-gradient(0deg,
+               rgba(19, 19, 24, 0.2) 0%,
+               rgba(19, 19, 24, 0.2) 100%),
+          url("../Images/Rectangle\ 5.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
      display: flex;
-     background: #c51414;
-     margin: 0 106px  185px;
+     align-items: center;
+     justify-content: center;
 }
+
+.img-tow {
+     width: 35.82rem;
+     height: 18.75rem;
+     border-radius: 1rem;
+     background: linear-gradient(0deg,
+               rgba(19, 19, 24, 0.2) 0%,
+               rgba(19, 19, 24, 0.2) 100%),
+          url("../Images/Rectangle\ 8.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.img-third{
+     width: 22.94rem;
+  height: 17.89rem;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-forth{
+     width: 28.75rem;
+  height: 17.88rem;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-fifth{
+     width: 17.13rem;
+  height: 17.88rem;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-sixth{
+     width: 465px;
+  height: 298px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-seventh{
+  width: 660px;
+  height: 298px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url("../Images/Rectangle\ 10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one-tow-img {
+     display: flex;
+     gap: 24px;
+     margin-bottom: 1.5rem;
+   }
+   .third-forth-fifth-img {
+     display: flex;
+     gap: 24px;
+     margin-bottom: 1.5rem;
+   }
+   .sixth-seventh-img {
+     display: flex;
+     gap: 24px;
+   }
